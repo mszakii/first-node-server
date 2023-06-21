@@ -1,7 +1,21 @@
 const http = require("http");
 const fs = require("fs");
+const _ = require("lodash");
 
 let server = http.createServer((req, res) => {
+  // lodash
+  let num = _.random(100_000, 999_999);
+  let array = [];
+  array.push(num);
+  console.log(...array);
+
+  let hello = _.once(() => {
+    console.log("Hello!");
+  });
+
+  hello();
+  hello();
+
   // path
   let path = "./www/";
 
@@ -41,5 +55,5 @@ let server = http.createServer((req, res) => {
 });
 
 server.listen(3000, "localhost", () => {
-  console.log("listening on port 3000");
+  console.log("listening on port http://localhost:3000");
 });

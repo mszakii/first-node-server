@@ -1,0 +1,16 @@
+{
+  "name": "codegang",
+  "version": "1.0.0",
+  "description": "node js course",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server",
+    "start": "nodemon server.js"
+  },
+  "author": "Mohamed E. Zaky",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.22"
+  }
+}
