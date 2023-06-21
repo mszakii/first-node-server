@@ -1,6 +1,7 @@
 const http = require("http");
 const fs = require("fs");
 const _ = require("lodash");
+const { hostname } = require("os");
 
 let server = http.createServer((req, res) => {
   // lodash
@@ -54,6 +55,10 @@ let server = http.createServer((req, res) => {
   });
 });
 
-server.listen(3000, "localhost", () => {
+// server.listen(3000, "localhost", () => {
+//   console.log("listening on port http://localhost:3000");
+// });
+
+server.listen(3000, () => {
   console.log("listening on port http://localhost:3000");
 });
